@@ -172,7 +172,7 @@ Webflow.push(function() {
         enforceFormat);
     $('input[type="tel"]').on("keyup", formatToPhone);
     $('input[type="tel"]').attr("pattern", ".{14}");
-    $('input[type="tel"]').attr("placeholder", "(012) 345-6789");
+    $('input[type="tel"]').attr("placeholder", "( _ _ _ ) _ _ _-_ _ _");
     $('.info-pack input[type="radio"]').on("change", function() {
         $(this).closest("form").find(".require-study-permit").is(":checked") ? ($(this).closest("form").find(".international-students").show(), $(this).closest("form").find(".info-kit-button").hide()) : ($(this).closest("form").find(".international-students").hide(), $(this).closest("form").find(".info-kit-button").show())
     });
